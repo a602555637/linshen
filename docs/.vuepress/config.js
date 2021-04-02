@@ -9,12 +9,13 @@ module.exports = {
     logo: '/avatar.jpg',
     nav: [
       { text: '主页', link: '/' },
+      { text: '组件', link: '/home/' },
       { text: '心情', link: '/feeling/' },
       {
         text: '博文',
         items: [
-          { text: '设计模式', link: '/detail/design/pattern/' },
-          { text: 'Docker', link: '/detail/base/docker/' },
+          { text: 'pattern', link: '/detail/design/pattern/' },
+          { text: 'docker', link: '/detail/base/docker/' },
           { text: 'mongoDB', link: '/detail/database/mongodb/' },
         ],
       },
@@ -60,6 +61,12 @@ module.exports = {
             'interview/css/',
             'interview/js/',
           ],
+        },
+      ],
+      '/feeling': [
+        {
+          title: 'es6',
+          children: ['feeling/es6/', 'feeling/js/'],
         },
       ],
     },
